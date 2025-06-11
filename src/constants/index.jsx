@@ -92,7 +92,7 @@ export const checklistItems = [
   {
     title: "Our mission",
     description:
-      "We aim to simplify global trade payment for African businesses by providing innovative and locally-tailored solutions, leveraging technology to improve trade and finance.",
+      "By offering creative, locally-tailored solutions and utilizing technology to enhance trade and finance, we hope to make international trade payments easier for African businesses.",
   },
   
 
