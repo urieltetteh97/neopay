@@ -32,8 +32,9 @@ const Pricing = () => {
                                 </li>
                             ))}
                         </ul>
-                        <a href="#" className='inline-flex justify-center items-center text-center
-                        w-full h-12 p-5 mt-20 tracking-tight'> Subscribe</a>
+                        <a href="#" className='inline-flex  justify-center items-center text-center
+                        w-full h-12 p-5 mt-20 tracking-tight hover:bg-gradient-to-r from-purple-800
+                         to-cyan-500'> Subscribe</a>
                     </div>
                 </div>
             ))}
