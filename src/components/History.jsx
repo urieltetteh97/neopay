@@ -6,7 +6,7 @@ import { checklistItems } from '../constants'
 const History = () => {
   return (
     
-    <div className='mt-20'>
+    <div id='hist' className='mt-20'>
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 mb-6 tracking-wide">
         Here {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-cyan-500">

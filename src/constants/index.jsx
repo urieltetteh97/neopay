@@ -9,10 +9,10 @@ import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user5.jpg";
 
 export const navItems = [
-  { label: "Features", href: "#" },
-  { label: "About", href: "#" },
-  { label: "History", href: "#" },
-  { label: "Pricing", href: "#" },
+  { label: "Features", href: "#featuresect" },
+  { label: "About", href: "#aboutsect" },
+  { label: "History", href: "#hist" },
+  { label: "Pricing", href: "#priceplans" },
   { label: "Testimonials", href: "#" },
 ];
 

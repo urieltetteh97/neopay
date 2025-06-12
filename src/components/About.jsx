@@ -5,7 +5,7 @@ const About = () => {
   // Add state for image loaded
   const [imageLoaded, setImageLoaded] = useState(false);
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-20 transition-opacity to duration-500 ease-in-out">
+    <div id='aboutsect' className="flex flex-col items-center mt-6 lg:mt-20 transition-opacity to duration-500 ease-in-out">
       <h1 className="text-4xl sm:text-6xl lg:text-7xl text-center tracking-wide">Building the global payment infrastructure 
         <span className="bg-gradient-to-r from-purple-700 to-cyan-600 text-transparent bg-clip-text">
           {" "}
