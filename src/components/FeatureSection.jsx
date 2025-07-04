@@ -1,5 +1,6 @@
 import React from 'react'
 import { features } from '../constants'
+import { motion } from 'framer-motion'
 
 const FeatureSection = () => {
   return (
@@ -8,15 +9,18 @@ const FeatureSection = () => {
             <span className='bg-neutral-900 text-cyan-500 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase'>
                 Features
             </span>
-            <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
+            <motion.h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
                 Secure transactions 
                 <span className="bg-gradient-to-r from-purple-900 to-cyan-500 text-transparent bg-clip-text">
                     {" "} 
                     and global reach
                 </span>
-            </h2>
+            </motion.h2>
         </div>
-        <div className="flex flex-wrap mt-10 lg:mt-20">
+        <motion.div className="flex flex-wrap mt-10 lg:mt-20"
+        initial={{ opacity: 0, translateX: -100 }}
+      whileInView={{ opacity: 1, translateX: 0 }}
+      transition={{ duration: 2 }}>
             {features.map((feature, index) => (
                 <div key={index} className='w-full sm:1/2 lg:w-1/3'>
                     <div className='flex'>
@@ -25,14 +29,15 @@ const FeatureSection = () => {
                             {feature.icon}
                         </div>
                         <div>
-                        <h5 className="mt-1 mb-6 text-xl">{feature.text}</h5>
+                        <motion.h5 className="mt-1 mb-6 text-xl"
+                        >{feature.text}</motion.h5>
                         <p className='text-md p-2 mb-20 text-neutral-200'>{feature.description}</p>
                     </div>
                     </div>
                     
                 </div>
             ))}
-        </div>
+        </motion.div>
     </div>
   )
 }

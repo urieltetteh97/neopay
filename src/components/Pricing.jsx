@@ -1,6 +1,7 @@
 import { CheckCircle2 } from 'lucide-react'
 import React from 'react'
 import { pricingOptions } from '../constants'
+import { motion } from 'framer-motion'
 
 const Pricing = () => {
   return (

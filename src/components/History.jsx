@@ -2,11 +2,15 @@ import React from 'react'
 import { CheckCircle2 } from 'lucide-react'
 import NGSbanner from '../assets/NGSbanner.png'
 import { checklistItems } from '../constants'
+import { motion } from 'framer-motion'
  
 const History = () => {
   return (
     
-    <div id='hist' className='mt-20'>
+    <motion.div id='hist' className='mt-20'
+    initial={{ opacity: 0, translateX: -100 }}
+      whileInView={{ opacity: 1, translateX: 0 }}
+      transition={{ duration: 2 }}>
       <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center mt-6 mb-6 tracking-wide">
         Here {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-800 to-cyan-500">
@@ -36,7 +40,7 @@ const History = () => {
       </div>
     
     
-    </div>
+    </motion.div>
   )
 }
 

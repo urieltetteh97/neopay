@@ -4,6 +4,7 @@
 
 :root {
   --font-family: 'Lato', sans-serif;
-  color-scheme: light dark;
+  color-scheme: dark;
   scroll-behavior: smooth;
+  background-color: gradient(to bottom, #151414, #8544d8) ;
 }

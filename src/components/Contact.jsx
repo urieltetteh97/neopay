@@ -8,9 +8,9 @@ const Contact = () => {
             Contact Us
         </h2>
         <div className="flex flex-wrap justify-center">
-                <p className="text-sm text-neutral-500 text-thin">Reach us for further information on {" "}
+                <h3 className=" text-neutral-500 text-thin">Reach us for further information on {" "}
                     <span className="bg-gradient-to-r from-purple-800 to-cyan-500 bg-clip-text text-transparent">neoglobalsolutionsltd@gmail.com</span>
-                </p>
+                </h3>
               
         </div>
         <div className="flex flex-wrap justify-center">
