@@ -5,7 +5,7 @@ import History from './components/History'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Signup from './pages/signup'
+import Signup from './Pages/Signup'
 
 
 function App() {
@@ -25,7 +25,7 @@ function App() {
             </>
           }
         />
-        <Route path="/signup" element={<Signup />} />
+        <Route path="/Signup" element={<Signup />} />
       </Routes>
     </Router>
   )
