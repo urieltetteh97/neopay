@@ -5,7 +5,10 @@ import { motion } from 'framer-motion'
 
 const Pricing = () => {
   return (
-    <div id='priceplans' className='mt-20'>
+    <motion.div id='priceplans' className='mt-20'
+    initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 2 }}>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-8 tracking-wider">
             Price Plans
         </h2>
@@ -40,7 +43,7 @@ const Pricing = () => {
         </div>
 
 
-    </div>
+    </motion.div>
   )
 }
 
