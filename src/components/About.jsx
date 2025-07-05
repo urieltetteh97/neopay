@@ -34,7 +34,7 @@ const About = () => {
         </motion.a>
         <motion.a
           href=""
-          className="items-center py-2 px-2 border rounded-md bg-neutral transform hover:scale-110 transition-all duration-300 ease-in"
+          className="items-center py-2 px-2 border rounded-md bg-neutral hover:animate-pulse duration-200"
         >
           Find out more
         </motion.a>
