@@ -19,8 +19,8 @@ function App() {
             <>
               <About />
               <FeatureSection />
-              <History />
               <Pricing />
+              <History />
               <Contact />
             </>
           }
