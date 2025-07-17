@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
-import ui from '../assets/appinterface.jpg'
-import { motion } from 'framer-motion'
 
+import { motion } from 'framer-motion'
+import Lottie from 'lottie-react'
+import animationData from '../assets/Finance App.json'
+import { useRef } from 'react'
 
 const About = () => {
-  const [imageLoaded, setImageLoaded] = useState(false);
+  const financeanimation = useRef()
   return (
     <motion.div id='aboutsect' className="flex flex-col items-center mt-6 lg:mt-20 transition-opacity duration-500 ease-in-out"
       initial={{ opacity: 0 }}
@@ -40,15 +41,13 @@ const About = () => {
         </motion.a>
       </div>
       <div className="flex-mt-10 justify-center items-center">
-        <motion.img
-          src={ui}
-          alt="About Neopay"
-          onLoad={() => setImageLoaded(true)}
-          className={`w-2xl h-auto mt-7 transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: imageLoaded ? 1 : 0, y: 0 }}
-          transition={{ duration: 1.5, ease: 'easeIn' }}
-        />
+        <Lottie  lottieRef={financeanimation} 
+        animationData = {animationData} 
+        style={{ width: '450px', height: '450px', margin: '0 auto', borderRadius: '16px' }} />
+        <p className="text-lg text-neutral-500 max-w-4xl ">
+          At <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Neopay</b>, we believe in that your transactions should be as seamless and stress free <br />
+          as going for a short walk. Convenient and reliable, that's what we want for you!
+        </p>
       </div>
     </motion.div>
   )

@@ -1,6 +1,8 @@
 import React from 'react'
 import { features } from '../constants'
 import { motion } from 'framer-motion'
+import Lottie from 'lottie-react'
+
 
 const FeatureSection = () => {
   return (
@@ -20,6 +22,23 @@ const FeatureSection = () => {
                 </span>
             </motion.h2>
         </div>
+        <div className="flex col-4">
+            <motion.p className="text-lg text-center text-neutral-500 max-w-4xl mt-6"
+            initial={{ opacity: 0, translateY: 20 }}>  </motion.p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
         <motion.div className="flex flex-wrap mt-10 lg:mt-20"
         initial={{ opacity: 0, translateX: 100 }}
       whileInView={{ opacity: 1, translateX: 0 }}
