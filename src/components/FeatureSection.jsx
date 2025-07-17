@@ -1,10 +1,16 @@
 import React from 'react'
-import { features } from '../constants'
 import { motion } from 'framer-motion'
 import Lottie from 'lottie-react'
+import animationData2 from '../assets/Scan and Pay.json'
+import animationData3 from '../assets/Payment Successful Animation.json'
+import animationData4 from '../assets/Marketing analytics.json'
+import animationData5 from '../assets/Id authentication.json'
+import animationData6 from '../assets/Finance App.json'  
+import { useRef } from 'react'
 
 
 const FeatureSection = () => {
+    const payanimation = useRef()
   return (
     <div id='featuresect' className='relative mt-20 border-b border-neutral-800 min-h-[800px]'>
         <div className="text-center">
@@ -22,48 +28,73 @@ const FeatureSection = () => {
                 </span>
             </motion.h2>
         </div>
-        <div className="flex col-4">
-            <motion.p className="text-lg text-center text-neutral-500 max-w-4xl mt-6"
-            initial={{ opacity: 0, translateY: 20 }}>  </motion.p>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <motion.div className="flex flex-wrap mt-10 lg:mt-20"
-        initial={{ opacity: 0, translateX: 100 }}
+        <div className="flex flex-wrap justify-center items-start">
+            
+                <motion.div className="w-full md:w-1/2 px-4">
+                <Lottie  lottieRef={payanimation} 
+                animationData = {animationData2} 
+                style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
+                <p className="text-lg text-center text-neutral-500 max-w-4xl ">
+                 <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">User Security</b>, Secure sign in options from passcodes to fingerprint scans <br />
+                   to protect your account.
+                </p>
+                </motion.div>
+                <motion.div className="w-full md:w-1/2 px-4"
+                initial={{ opacity: 0, translateX: -100 }}
+                whileInView={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 2 }}>
+                <Lottie  lottieRef={payanimation} 
+                animationData = {animationData3} 
+                style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
+                <p className="text-lg text-center text-neutral-500 max-w-4xl ">
+                   <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Seamless integration </b>, Smoothly complete payments for your bills and subscriptions with <br />
+                  Mobile Money and Bank Transfers 
+                </p>
+                </motion.div>
+                 <motion.div className="w-full md:w-1/2 px-4"
+                 initial={{ opacity: 0, translateX: -100 }}
+                whileInView={{ opacity: 1, translateX: 0 }}
+                transition={{ duration: 2 }}>
+                <Lottie  lottieRef={payanimation} 
+                animationData = {animationData4} 
+                style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
+                <p className="text-lg text-center text-neutral-500 max-w-4xl ">
+                  <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Analytics Dashboard</b>, A detailed breakdown of your transaction history  <br />
+                   to help you keep track of your spending and income
+                </p>
+                </motion.div>
+                <motion.div className="w-full md:w-1/2 px-4"
+                initial={{ opacity: 0, translateX: -100 }}
       whileInView={{ opacity: 1, translateX: 0 }}
       transition={{ duration: 2 }}>
-            {features.map((feature, index) => (
-                <div key={index} className='w-full sm:1/2 lg:w-1/3'
-                initial={{ opacity: 0, translateX: 100 }}
+                <Lottie  lottieRef={payanimation} 
+                animationData = {animationData5} 
+                style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
+                <p className="text-lg text-center text-neutral-500 max-w-4xl ">
+                <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Two factor Authentication</b>, Further security provided on every transaction with  <br />
+                 two-factor authentication, ensuring your transactions are safe and secure.
+                </p>
+                </motion.div>
+                 <motion.div className="w-full md:w-1/2 px-4"
+                 initial={{ opacity: 0, translateX: -100 }}
       whileInView={{ opacity: 1, translateX: 0 }}
       transition={{ duration: 2 }}>
-                    <div className='flex'>
-                        <div className="flex mx-6 h-10 w-10 p-2 bg-neutral-900 text-cyan-700 
-                        justify-center items-center rounded-full">
-                            {feature.icon}
-                        </div>
-                        <div>
-                        <motion.h5 className="mt-1 mb-6 text-xl"
-                        >{feature.text}</motion.h5>
-                        <p className='text-md p-2 mb-20 text-neutral-200'>{feature.description}</p>
-                    </div>
-                    </div>
-                    
-                </div>
-            ))}
-        </motion.div>
-    </div>
+                <Lottie  lottieRef={payanimation} 
+                animationData = {animationData6} 
+                style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
+                <p className="text-lg text-center text-neutral-500 max-w-4xl ">
+                <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">User Friendly</b>, A concise and easy to navigate  <br />
+                  interface that allows you to focus on what matters most - your transactions.
+                </p>
+                </motion.div>
+                 
+              
+            </div>
+
+            </div>
+
+
+
   )
 }
 

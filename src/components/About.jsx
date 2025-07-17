@@ -1,7 +1,7 @@
 
 import { motion } from 'framer-motion'
 import Lottie from 'lottie-react'
-import animationData from '../assets/Finance App.json'
+import animationData from '../assets/Digital Finance Animation.json'
 import { useRef } from 'react'
 
 const About = () => {
@@ -40,11 +40,11 @@ const About = () => {
           Find out more
         </motion.a>
       </div>
-      <div className="flex-mt-10 justify-center items-center">
+      <div className="flex-mt-10 py-5 justify-center items-center">
         <Lottie  lottieRef={financeanimation} 
         animationData = {animationData} 
-        style={{ width: '450px', height: '450px', margin: '0 auto', borderRadius: '16px' }} />
-        <p className="text-lg text-neutral-500 max-w-4xl ">
+        style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
+        <p className="text-lg text-center text-neutral-500 max-w-4xl ">
           At <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Neopay</b>, we believe in that your transactions should be as seamless and stress free <br />
           as going for a short walk. Convenient and reliable, that's what we want for you!
         </p>
