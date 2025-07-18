@@ -45,7 +45,7 @@ const About = () => {
         animationData = {animationData} 
         style={{ width: '350px', height: '350px', margin: '0 auto', borderRadius: '16px' }} />
         <p className="text-lg text-center text-neutral-500 max-w-4xl ">
-          At <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Neopay</b>, we believe in that your transactions should be as seamless and stress free <br />
+          At <b class ="bg-clip-text text-transparent font-bold bg-gradient-to-r from-purple-700 to-cyan-600">Neopay</b>, we believe that your transactions should be as seamless and stress free <br />
           as going for a short walk. Convenient and reliable, that's what we want for you!
         </p>
       </div>
